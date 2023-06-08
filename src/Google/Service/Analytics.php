@@ -70,6 +70,7 @@ class Google_Service_Analytics extends Google_Service
   public $management_webpropertyUserLinks;
   public $metadata_columns;
   public $provisioning;
+  public $serviceName;
   
 
   /**
