@@ -71,13 +71,6 @@ class Google_Signer_P12 extends Google_Signer_Abstract
     }
   }
 
-  public function __destruct()
-  {
-    if ($this->privateKey) {
-      openssl_pkey_free($this->privateKey);
-    }
-  }
-
   public function sign($data)
   {
     if (version_compare(PHP_VERSION, '5.3.0') < 0) {
